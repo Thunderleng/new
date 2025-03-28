@@ -1,0 +1,101 @@
+<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 200" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+  <style type="text/css">
+    svg {
+      background-color: #080808;
+    }
+
+    .st1 {
+      fill: #48FFFF;
+      fill-opacity: 0.9;
+    }
+
+    .st2 {
+      fill: #48FFFF;
+      fill-opacity: 0.7;
+    }
+
+    .st3 {
+      fill: #48FFFF;
+      fill-opacity: 0.5;
+    }
+
+    .st4 {
+      fill: none;
+      stroke: url(#line_00000173870052438409208090000011397048173736242048_);
+      stroke-width: 3;
+      stroke-miterlimit: 10;
+    }
+
+    .st5 {
+      fill: url(#shine_00000036966883190852774830000011257340917761686440_);
+    }
+
+    .st6 {
+      fill: #00FFFF;
+    }
+
+    .st7 {
+      font-family: 'MicrosoftYaHei-Bold';
+    }
+
+    .st8 {
+      font-size: 36px;
+    }
+
+    .st9 {
+      letter-spacing: 1;
+    }
+  </style>
+  <g id="wave-left">
+    <g id="wave-left-1" transform="matrix(-1,0,0,1,1243.1804466247559,0)">
+      <path class="st1" d="M662.5,42.8h7.6l-31.7,32.8h-7.6L662.5,42.8L662.5,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"></animate>
+    </g>
+    <g id="wave-left-2" transform="matrix(-1,0,0,1,1216.9533576965332,0)">
+      <path class="st2" d="M649.4,42.8h7.6l-31.7,32.8h-7.6L649.4,42.8L649.4,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="1s"></animate>
+    </g>
+    <g id="wave-left-3" transform="matrix(-1,0,0,1,1190.7243461608887,0)">
+      <path class="st3" d="M636.3,42.8h7.6l-31.7,32.8h-7.6L636.3,42.8L636.3,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="2s"></animate>
+    </g>
+  </g>
+  <g id="wave-right" transform="matrix(-1,0,0,1,2766.4693870544434,0)">
+    <g id="wave-right-1" transform="matrix(-1,0,0,1,2897.607692718506,0)">
+      <path class="st1" d="M1471.4,42.8h7.6l-31.7,32.8h-7.6L1471.4,42.8L1471.4,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"></animate>
+    </g>
+    <g id="wave-right-2" transform="matrix(-1,0,0,1,2871.380603790283,0)">
+      <path class="st2" d="M1458.3,42.8h7.6l-31.7,32.8h-7.6L1458.3,42.8L1458.3,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="1s"></animate>
+    </g>
+    <g id="wave-right-3" transform="matrix(-1,0,0,1,2845.1515922546387,0)">
+      <path class="st3" d="M1445.2,42.8h7.6L1421,75.6h-7.6L1445.2,42.8L1445.2,42.8z"></path>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" begin="2s"></animate>
+    </g>
+  </g>
+  <!-- <linearGradient id="line_00000023994454057530153110000010704537899013655470_" gradientUnits="userSpaceOnUse" x1="-8.875063e-03" y1="51.5948" x2="1920.0089" y2="51.5948">
+    <stop offset="0" style="stop-color:#00FFFF;stop-opacity:0.3"></stop>
+    <stop offset="0.5" style="stop-color:#00FFFF"></stop>
+    <stop offset="1" style="stop-color:#00FFFF;stop-opacity:0.3"></stop>
+  </linearGradient> -->
+  <path id="line" style="fill:none;stroke:url(#line_00000023994454057530153110000010704537899013655470_);stroke-width:3;stroke-miterlimit:10;" d="
+	M0,28.4c0,0,538.6,3.2,575.7,3.2c30.5,0,25.5,43.3,70.1,43.3c21.4,0,596.3,0,629.4,0c44.9,0,33.1-43.3,75.1-43.3
+	c36.2,0,569.7-3.2,569.7-3.2"></path>
+  <!-- <radialGradient id="shine_00000119839261443333368870000010198375436372533932_" cx="0.5" cy="0.5" r="1" gradientUnits="objectBoundingBox">
+    <stop offset="0" style="stop-color:#FFFFFF"></stop>
+    <stop offset="0.05" style="stop-color:#FBFFFF;stop-opacity:0.9941"></stop>
+    <stop offset="0.114" style="stop-color:#B0FFFF;stop-opacity:0.6"></stop>
+    <stop offset="0.2154" style="stop-color:#71FFFF;stop-opacity:0.4"></stop>
+    <stop offset="0.3069" style="stop-color:#40FFFF;stop-opacity:0.3"></stop>
+    <stop offset="0.3869" style="stop-color:#1DFFFF;stop-opacity:0.1"></stop>
+    <stop offset="0.4523" style="stop-color:#08FFFF;stop-opacity:0.05"></stop>
+    <stop offset="0.4948" style="stop-color:#00FFFF;stop-opacity:0.02"></stop>
+  </radialGradient> -->
+  <ellipse id="shine" style="fill:url(#shine_00000119839261443333368870000010198375436372533932_);" cx="960" cy="74.8" rx="138" ry="10.2">
+    <animate attributeName="ry" values="5;10.2;5" dur="2s" repeatCount="indefinite"></animate>
+    <animate attributeName="rx" values="50;138;50" dur="2s" repeatCount="indefinite"></animate>
+    <animate attributeName="cx" values="800;960;1120;960;800" dur="4s" repeatCount="indefinite"></animate>
+  </ellipse>
+  <text id="title" transform="matrix(1 0 0 1 725.5182 49.5948)" class="st6 st7 st8 st9"></text>
+</svg>

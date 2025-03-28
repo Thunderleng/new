@@ -1,0 +1,50 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="waveLineGradient" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="1920" y2="20">
+      <stop offset="0" stop-color="#00FFFF" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#00FFFF"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <radialGradient id="shineGradient" cx="0.5" cy="0.5" r="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.05" stop-color="#FBFFFF" stop-opacity="0.99"/>
+      <stop offset="0.114" stop-color="#B0FFFF" stop-opacity="0.6"/>
+      <stop offset="0.2154" stop-color="#71FFFF" stop-opacity="0.4"/>
+      <stop offset="0.3069" stop-color="#40FFFF" stop-opacity="0.3"/>
+      <stop offset="0.3869" stop-color="#1DFFFF" stop-opacity="0.1"/>
+      <stop offset="0.4523" stop-color="#08FFFF" stop-opacity="0.05"/>
+      <stop offset="0.4948" stop-color="#00FFFF" stop-opacity="0.02"/>
+    </radialGradient>
+    
+    <!-- Styles -->
+    <style type="text/css">
+      .wave-text {
+        fill: #00FFFF;
+        font-family: 'MicrosoftYaHei-Bold';
+        font-size: 36px;
+        letter-spacing: 1px;
+      }
+      .wave-path {
+        fill: none;
+        stroke: url(#waveLineGradient);
+        stroke-width: 3;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  
+  <!-- Wave Path - moved up by reducing y-coordinates -->
+  <path class="wave-path" d="M0,8.4c0,0,538.6,3.2,575.7,3.2c30.5,0,25.5,23.3,70.1,23.3c21.4,0,596.3,0,629.4,0c44.9,0,33.1-23.3,75.1-23.3c36.2,0,569.7-3.2,569.7-3.2"/>
+  
+  <!-- Shine Effect - moved up by reducing cy -->
+  <ellipse fill="url(#shineGradient)" cx="960" cy="34.8" rx="138" ry="10.2">
+    <animate attributeName="ry" values="5;10.2;5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="50;138;50" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="800;960;1120;960;800" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Text - moved up by reducing y-coordinate -->
+  <text class="wave-text" x="725" y="30"></text>
+</svg>
