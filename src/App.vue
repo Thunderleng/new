@@ -5,7 +5,12 @@ import FullScreen from './view/FullScreen.vue'
 </script>
 
 <template>
-<FullScreen/>
+<router-view v-slot="{ Component }">
+  <keep-alive>
+    <component :is="Component" />
+  </keep-alive>
+</router-view>
+<!-- <FullScreen/> -->
 
 </template>
 

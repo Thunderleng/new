@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import { debounce } from "../utils/index.js";
 let BigScreen = ref(); //容器组件
 let ready = ref(false);
@@ -15,7 +15,8 @@ let width = ref(0);
 let height = ref(0);
 let domObserver: any;
 
-onMounted(() => {
+onMounted(async() => {
+  await nextTick(); // 等待路由内容渲染
   // 初始化
   initApp();
   // 设置缩放
@@ -30,6 +31,7 @@ onMounted(() => {
     attributeOldValue: true,
   });
   //渲染内容
+  console.log(`output`)
   ready.value = true;
 });
 
