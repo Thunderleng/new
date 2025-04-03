@@ -1,9 +1,10 @@
 <template>
-  <div class="Screen" ref="BigScreen">
-    <template v-if="ready">
-      <slot></slot>
-    </template>
-  </div>
+
+    <div class="Screen" ref="BigScreen">
+      <template v-if="ready">
+        <slot></slot>
+      </template>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -15,7 +16,7 @@ let width = ref(0);
 let height = ref(0);
 let domObserver: any;
 
-onMounted(async() => {
+onMounted(async () => {
   await nextTick(); // 等待路由内容渲染
   // 初始化
   initApp();
@@ -46,9 +47,9 @@ onUnmounted(() => {
 const setScale = () => {
   const scaleX = document.body.clientWidth / width.value;
   const scaleY = document.body.clientHeight / height.value;
-  const scale = scaleY; 
-  // const scale = Math.min(scaleX, scaleY); // 取较小值保证完全可见
-  
+  // const scale = scaleY; 
+  const scale = Math.min(scaleX, scaleY); // 取较小值保证完全可见
+
   BigScreen.value.style.transform = `scale(${scale})`;
 };
 
@@ -63,14 +64,24 @@ const initApp = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.container1{
+width: 100vw;
+height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Screen {
+
   position: fixed;
-  top: 0px;
-  left: 0px;
+  // top: 0px;
+  // left: 0px;
   overflow: hidden;
   transform-origin: left top;
   transition: transform 0.2s;
   z-index: 999;
+  margin: auto;
 }
 </style>

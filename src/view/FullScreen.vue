@@ -1,6 +1,6 @@
 <template>
     <!-- <TestSvg/> -->
-    <ResizeContainer>
+    <VScaleScreen>
         <div style="height: 100vh;">
             <MapContainer />
         </div>
@@ -12,8 +12,9 @@
                     {{ isFullscreen ? '退出全屏' : '进入全屏' }}
                 </div>
                 <span class="header-title"> 乡村坝坝宴智慧监管大平台</span>
-                <div style="display: flex;justify-content: space-around;align-items:start;margin-top: -50px" @click="toggleScreen">
-                    <div >
+                <div style="display: flex;justify-content: space-around;align-items:start;margin-top: -50px"
+                    @click="toggleScreen">
+                    <div>
                         2025年3月28日
                     </div>
 
@@ -228,7 +229,7 @@
 
             </div>
         </div>
-    </ResizeContainer>
+    </VScaleScreen>
 
 </template>
 
@@ -244,6 +245,7 @@ import EChart from '@/components/Charts.vue'
 import CameraControl from '@/components/CameraControl.vue'
 import ScreenProgress from '@/components/ScreenProgress.vue'
 import MapContainer from "@/components/MapContainer.vue";
+import VScaleScreen from 'v-scale-screen'
 defineOptions({
     name: 'FullScreen'
 })
