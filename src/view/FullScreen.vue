@@ -1,235 +1,234 @@
 <template>
-    <!-- <TestSvg/> -->
-    <VScaleScreen>
-        <div style="height: 100vh;">
-            <MapContainer />
-        </div>
-        <div class="container">
-            <header class="screen-header">
-                <div style="display: flex;justify-content: space-around;width: 100px;margin-top: -50px;align-items:center;"
-                    @click="toggleScreen">
-                    <div class="header-btn"></div>
-                    {{ isFullscreen ? '退出全屏' : '进入全屏' }}
+
+    <!-- <VScaleScreen> -->
+    <div style="height: 100vh;">
+        <MapContainer />
+    </div>
+    <div class="container">
+        <header class="screen-header">
+            <div style="display: flex;justify-content: space-around;width: 100px;margin-top: -50px;align-items:center;"
+                @click="toggleScreen">
+                <div class="header-btn"></div>
+                {{ isFullscreen ? '退出全屏' : '进入全屏' }}
+            </div>
+            <span class="header-title"> 乡村坝坝宴智慧监管大平台</span>
+            <div style="display: flex;justify-content: space-around;align-items:start;margin-top: -50px"
+                @click="toggleScreen">
+                <div>
+                    2025年3月28日
                 </div>
-                <span class="header-title"> 乡村坝坝宴智慧监管大平台</span>
-                <div style="display: flex;justify-content: space-around;align-items:start;margin-top: -50px"
-                    @click="toggleScreen">
+
+            </div>
+
+
+        </header>
+        <div class="content">
+            <div class="left-boxs boxs">
+                <div class="box left-item1">
+                    <div class="title">
+                    </div>
+                    <div class="item-select ">
+                        <div class="select-box">
+
+                            <span>近一周</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近一月</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近三月</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近一年</span>
+                        </div>
+                    </div>
+                    <div class="left-item1-types">
+                        <div class="left-item1-type">
+                            <div class="left-item1-title">
+                                待举办
+                            </div>
+                            <div class="left-item1-agree">
+
+                                已同意
+                                <span>111</span>
+                            </div>
+                            <div class="left-item1-waitagree">
+                                待同意
+                                <span>111</span>
+                            </div>
+                        </div>
+                        <div class="left-item1-type">
+                            <div class="left-item1-title">
+                                已举办
+                            </div>
+                            <div class="left-item1-noerror">
+                                无异常
+                            </div>
+                            <div class="left-item1-error">
+                                有告警
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" box left-item2">
+                    <div class="title">
+                    </div>
+                    <div class="item-select ">
+                        <div class="select-box">
+
+                            <span>近一周</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近一月</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近三月</span>
+                        </div>
+                        <div class="select-box">
+                            <span>近一年</span>
+                        </div>
+                    </div>
+                    <div class="left-item2-types">
+                        <div class="left-item2-type1">
+                            <div style="display: flex;flex-direction: column;">
+                                <span>已晨检人数</span>
+                                <span>12%</span>
+                            </div>
+                        </div>
+                        <div class="left-item2-type2">
+                            <div style="display: flex;flex-direction: column;">
+                                <span>晨检合格率</span>
+                                <span>12%</span>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="left-item2-progress">
+                        <div>
+                            <p>手指甲</p>
+                            <el-progress :percentage="50" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box left-item3">
+                    <div class="title">
+                    </div>
                     <div>
-                        2025年3月28日
-                    </div>
-
-                </div>
-
-
-            </header>
-            <div class="content">
-                <div class="left-boxs boxs">
-                    <div class="box left-item1">
-                        <div class="title">
-                        </div>
-                        <div class="item-select ">
-                            <div class="select-box">
-
-                                <span>近一周</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近一月</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近三月</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近一年</span>
-                            </div>
-                        </div>
-                        <div class="left-item1-types">
-                            <div class="left-item1-type">
-                                <div class="left-item1-title">
-                                    待举办
-                                </div>
-                                <div class="left-item1-agree">
-
-                                    已同意
-                                    <span>111</span>
-                                </div>
-                                <div class="left-item1-waitagree">
-                                    待同意
-                                    <span>111</span>
-                                </div>
-                            </div>
-                            <div class="left-item1-type">
-                                <div class="left-item1-title">
-                                    已举办
-                                </div>
-                                <div class="left-item1-noerror">
-                                    无异常
-                                </div>
-                                <div class="left-item1-error">
-                                    有告警
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" box left-item2">
-                        <div class="title">
-                        </div>
-                        <div class="item-select ">
-                            <div class="select-box">
-
-                                <span>近一周</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近一月</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近三月</span>
-                            </div>
-                            <div class="select-box">
-                                <span>近一年</span>
-                            </div>
-                        </div>
-                        <div class="left-item2-types">
-                            <div class="left-item2-type1">
-                                <div style="display: flex;flex-direction: column;">
-                                    <span>已晨检人数</span>
-                                    <span>12%</span>
-                                </div>
-                            </div>
-                            <div class="left-item2-type2">
-                                <div style="display: flex;flex-direction: column;">
-                                    <span>晨检合格率</span>
-                                    <span>12%</span>
-                                </div>
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>
-                        <div class="left-item2-progress">
-                            <div>
-                                <p>手指甲</p>
-                                <el-progress :percentage="50" />
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="box left-item3">
-                        <div class="title">
-                        </div>
-                        <div>
-                            <div class="left-item3-main">
-                                <div class="circularprogress">
-                                    <CircularSvg />
-                                    <span class="text">60%</span>
-                                </div>
+                        <div class="left-item3-main">
+                            <div class="circularprogress">
+                                <CircularSvg />
+                                <span class="text">60%</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-boxs boxs">
-                    <div class="box bottom-item1">
-                        <div class="title">
+            </div>
+            <div class="bottom-boxs boxs">
+                <div class="box bottom-item1">
+                    <div class="title">
 
-                        </div>
-                        <div class="head-select">
-                            <div class="date-box">年</div>
-                            <div class="date-box">月</div>
-                            <div class="date-box">日</div>
-                        </div>
-                        <div>
-                            <EChart v-show="isShow" :options="options" style="width: 100%; height: 200px"
-                                @chart="chart">
-                            </EChart>
-                        </div>
                     </div>
-                    <div class="box bottom-item2">
-                        <div class="title">
-                        </div>
-                        <div class="head-select">
-                            <div class="date-box">年</div>
-                            <div class="date-box">月</div>
-                            <div class="date-box">日</div>
-                        </div>
+                    <div class="head-select">
+                        <div class="date-box">年</div>
+                        <div class="date-box">月</div>
+                        <div class="date-box">日</div>
+                    </div>
+                    <div>
                         <EChart v-show="isShow" :options="options" style="width: 100%; height: 200px" @chart="chart">
                         </EChart>
                     </div>
                 </div>
-                <div class="right-boxs boxs">
-                    <div class="box right-item1">
-                        <div class="title">
-                        </div>
-
+                <div class="box bottom-item2">
+                    <div class="title">
                     </div>
-                    <div class="box right-item2">
-                        <div class="title">
-                        </div>
+                    <div class="head-select">
+                        <div class="date-box">年</div>
+                        <div class="date-box">月</div>
+                        <div class="date-box">日</div>
+                    </div>
+                    <EChart v-show="isShow" :options="options" style="width: 100%; height: 200px" @chart="chart">
+                    </EChart>
+                </div>
+            </div>
+            <div class="right-boxs boxs">
+                <div class="box right-item1">
+                    <div class="title">
+                    </div>
+
+                </div>
+                <div class="box right-item2">
+                    <div class="title">
+                    </div>
+                    <div>
                         <div>
-                            <div>
-                                <div class="right-item2-types">
-                                    <div class="right-item2-type">
-                                        <div class="right-item2-img1"></div>
-                                        <div class="right-item2-text">
-                                            <p>未带口罩</p>
-                                            <p class="right-item2-textc">20%</p>
-                                        </div>
+                            <div class="right-item2-types">
+                                <div class="right-item2-type">
+                                    <div class="right-item2-img1"></div>
+                                    <div class="right-item2-text">
+                                        <p>未带口罩</p>
+                                        <p class="right-item2-textc">20%</p>
                                     </div>
-                                    <div class="right-item2-type">
-                                        <div class="right-item2-img1"></div>
-                                        <div class="right-item2-text">
-                                            <p>未带口罩</p>
-                                            <p class="right-item2-textc">20%</p>
-                                        </div>
+                                </div>
+                                <div class="right-item2-type">
+                                    <div class="right-item2-img1"></div>
+                                    <div class="right-item2-text">
+                                        <p>未带口罩</p>
+                                        <p class="right-item2-textc">20%</p>
                                     </div>
-                                    <div class="right-item2-type">
-                                        <div class="right-item2-img1"></div>
-                                        <div class="right-item2-text">
-                                            <p>未带口罩</p>
-                                            <p class="right-item2-textc">20%</p>
-                                        </div>
+                                </div>
+                                <div class="right-item2-type">
+                                    <div class="right-item2-img1"></div>
+                                    <div class="right-item2-text">
+                                        <p>未带口罩</p>
+                                        <p class="right-item2-textc">20%</p>
                                     </div>
-                                    <div class="right-item2-type">
-                                        <div class="right-item2-img1"></div>
-                                        <div class="right-item2-text">
-                                            <p>未带口罩</p>
-                                            <p class="right-item2-textc">20%</p>
-                                        </div>
+                                </div>
+                                <div class="right-item2-type">
+                                    <div class="right-item2-img1"></div>
+                                    <div class="right-item2-text">
+                                        <p>未带口罩</p>
+                                        <p class="right-item2-textc">20%</p>
                                     </div>
                                 </div>
                             </div>
-                            <el-carousel :interval="4000" type="card" height="170px" indicator-position="none">
-                                <el-carousel-item v-for="item in 6" :key="item">
-                                    <h3 text="2xl" justify="center">{{ item }}</h3>
-                                </el-carousel-item>
-                            </el-carousel>
                         </div>
+                        <el-carousel :interval="4000" type="card" height="170px" indicator-position="none">
+                            <el-carousel-item v-for="item in 6" :key="item">
+                                <h3 text="2xl" justify="center">{{ item }}</h3>
+                            </el-carousel-item>
+                        </el-carousel>
                     </div>
-                    <div class="box right-item3">
-                        <div class="title">
+                </div>
+                <div class="box right-item3">
+                    <div class="title">
+                    </div>
+                    <div class="right-item3-types">
+                        <div class="right-item3-type">
+                            <p>按时留样合格率</p>
+                            <p>50%</p>
                         </div>
-                        <div class="right-item3-types">
-                            <div class="right-item3-type">
-                                <p>按时留样合格率</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="right-item3-type">
-                                <p>按时留样合格率</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="right-item3-type">
-                                <p>按时留样合格率</p>
-                                <p>50%</p>
-                            </div>
-                            <div class="right-item3-type">
-                                <p>按时留样合格率</p>
-                                <p>50%</p>
-                            </div>
+                        <div class="right-item3-type">
+                            <p>按时留样合格率</p>
+                            <p>50%</p>
+                        </div>
+                        <div class="right-item3-type">
+                            <p>按时留样合格率</p>
+                            <p>50%</p>
+                        </div>
+                        <div class="right-item3-type">
+                            <p>按时留样合格率</p>
+                            <p>50%</p>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
-    </VScaleScreen>
+    </div>
+    <!-- </VScaleScreen> -->
 
 </template>
 
@@ -237,6 +236,7 @@
 import Line from "@/components/line.vue"
 import CircularSvg from "@/components/CircularSvg.vue"
 import TestSvg from "@/components/testSvg.vue"
+import autofit from 'autofit.js'
 /** 引入 useFullScreen 全屏hook函数 */
 import { ref } from 'vue'
 import { useFullscreen, useToggleFullscreen } from '@/utils/FullScreen'
@@ -249,7 +249,7 @@ import VScaleScreen from 'v-scale-screen'
 defineOptions({
     name: 'FullScreen'
 })
-
+autofit.init()
 // 进度条
 const format = (percentage) => (percentage === 100 ? 'Full' : `${percentage}%`)
 

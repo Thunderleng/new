@@ -13,7 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'PLS': fileURLToPath(new URL('./src/plugins', import.meta.url)),
+      'PLS/simpleGIS': fileURLToPath(new URL('./src/plugins/simpleGIS', import.meta.url)),
     },
   },
 })
